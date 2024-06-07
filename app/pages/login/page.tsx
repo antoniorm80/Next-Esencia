@@ -1,15 +1,16 @@
 import Image from "next/image";
-import SignInForm from "./components/sign-in.form";
+
 import { Metadata } from "next";
+import SignInForm from "@/app/(auth)/components/sign-in.form";
 
 export const metadata: Metadata = {
   title: "Sign in",
   description: "Sign in to get access to your product list",
 };
 
-const AuthPage = () => {
-  return (
-    <>
+const LoginPage = () => {
+    return ( 
+        <>
       <div className="relative min-h-screen flex">
         <div className="flex flex-col sm:flex-row items-center md:items-start sm:justify-center md:justify-start flex-auto min-w-0 bg-white">
           <div className="bg-login sm:w-1/2 xl:w-2/5 h-full hidden md:flex flex-auto items-center justify-start p-10 overflow-hidden bg-purple-900 text-white bg-no-repeat bg-cover relative">
@@ -88,7 +89,7 @@ const AuthPage = () => {
         </div>
       </div>
     </>
-  );
+     );
 }
-
-export default AuthPage;
+ 
+export default LoginPage;

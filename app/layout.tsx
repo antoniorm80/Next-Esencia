@@ -11,13 +11,19 @@ export const metadata: Metadata = {
 
 export default function RootLayout({
   children,
+  auth,
+  landing,
 }: Readonly<{
   children: React.ReactNode;
+  auth: React.ReactNode;
+  landing: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="es">
       <body className={inter.className} suppressHydrationWarning={true}>
-        {children}
+        {children},
+        {auth},
+        {landing}
       </body>
     </html>
   );
