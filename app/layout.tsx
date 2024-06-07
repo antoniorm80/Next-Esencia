@@ -10,20 +10,14 @@ export const metadata: Metadata = {
 };
 
 export default function RootLayout({
-  children,
-  auth,
-  landing,
+  children
 }: Readonly<{
-  children: React.ReactNode;
-  auth: React.ReactNode;
-  landing: React.ReactNode;
+  children: React.ReactNode;  
 }>) {
   return (
     <html lang="es">
       <body className={inter.className} suppressHydrationWarning={true}>
-        {children},
-        {auth},
-        {landing}
+        {children}        
       </body>
     </html>
   );
